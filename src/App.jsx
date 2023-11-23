@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-      <ComingSoon />
-      {/*       <Navbar />
+      {/* <ComingSoon /> */}
+      <Navbar />
       <Header />
       <About />
       <Radio />
@@ -24,7 +24,7 @@ function App() {
       <Art />
       <Press />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }
