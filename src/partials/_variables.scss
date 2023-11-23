@@ -1,0 +1,11 @@
+//light mode
+$lm-borders-header-text: #0d0630;
+$lm-shadow: #18314f;
+$lm-text: #384e77;
+$lm-selected-background: #8bbeb2;
+$lm-hover: #e6f9af;
+$lm-background: #ffffff;
+$lm-background2: #f5f5f5;
+$lm-foreground: (
+    linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 55%, rgba(190, 190, 190, 1) 96%)
+);
