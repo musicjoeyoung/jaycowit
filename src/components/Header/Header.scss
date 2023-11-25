@@ -1,13 +1,21 @@
 @use "../../../src/partials/variables" as *;
+@use "../../../src/partials/mixins" as *;
 
 .header {
     //border: 1px solid;
     padding: 1rem 6rem 6rem 6rem;
     border-radius: 1rem;
     background-color: $lm-background2;
+    width: 60%;
+    margin: 3rem auto;
+
+    @include tablet {
+        width: 35%;
+    }
 
     &__h1 {
         background-color: inherit;
+        text-align: center;
     }
 }
 .titles-container {

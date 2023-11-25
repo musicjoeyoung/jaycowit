@@ -2,15 +2,22 @@
     font-size: 1.2rem;
     justify-content: space-evenly;
     display: flex;
-    margin: 1rem 0rem;
+    padding: 1rem 0rem;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    /* height: 2rem; */
+    z-index: 3;
 
     &__link {
         font-weight: 400;
         text-decoration: inherit;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
     }
 }
 .dropdown {

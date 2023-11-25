@@ -1,0 +1,22 @@
+@use "../../../src/partials/mixins" as *;
+
+.about-container {
+    display: block;
+
+    @include tablet {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+    }
+    &__bio {
+    }
+    &__img {
+        width: 40%;
+        height: 100%;
+        border-radius: 50%;
+
+        @include tablet {
+            width: 25%;
+        }
+    }
+}
