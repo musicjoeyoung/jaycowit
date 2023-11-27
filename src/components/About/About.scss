@@ -2,6 +2,7 @@
 
 .about-container {
     display: block;
+    text-align: center;
 
     @include tablet {
         display: flex;
@@ -9,6 +10,7 @@
         margin: 0 auto;
     }
     &__bio {
+        text-align: left;
     }
     &__img {
         width: 40%;
