@@ -1,0 +1,40 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+
+    &__h6 {
+        text-align: center;
+        margin: 0;
+    }
+}
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+
+    &__img {
+        width: 4%;
+    }
+    &__img:nth-child(1) {
+        margin: 0 0.25rem;
+    }
+    &__img:nth-child(2) {
+        width: 4.8%;
+    }
+    &__img:nth-child(3) {
+        width: 5%;
+    }
+    &__img:nth-child(4) {
+        width: 4.3%;
+        margin: 0 0.25rem;
+    }
+    &__img:nth-child(5) {
+        width: 4.3%;
+        margin: 0 0.25rem;
+    }
+    &__img:nth-child(6) {
+        width: 7.5%;
+    }
+}
