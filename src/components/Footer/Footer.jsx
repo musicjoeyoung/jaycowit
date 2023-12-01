@@ -17,7 +17,7 @@ const Footer = () => {
                 <img className="image-container__img" src={linkedin} />
                 <img className="image-container__img" src={twitter} />
             </div>
-            <h6 className="footer__h6">© Joseph Young. All rights reserved.</h6>
+            <h6 className="footer__h6">©Jay Cowit. All rights reserved.</h6>
             <h6 className="footer__h6"><a href="mailto:joseph.m.young2@gmail.com">Contact the Webmaster</a></h6>
         </footer>
     )

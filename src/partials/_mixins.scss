@@ -11,3 +11,9 @@
         @content;
     }
 }
+
+@mixin small-mobile {
+    @media screen and (min-width: $small-mobile) {
+        @content;
+    }
+}
