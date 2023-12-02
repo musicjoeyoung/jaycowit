@@ -1,0 +1,25 @@
+@use "../../partials/mixins" as *;
+
+.art-container {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    &__art {
+        width: 65%;
+        margin: 0.5rem;
+
+        @include tablet {
+            width: 22%;
+        }
+    }
+}

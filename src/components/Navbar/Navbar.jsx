@@ -13,6 +13,7 @@ const Navbar = () => {
                     <a className="navbar__link" href="#soundDesign">Sound Design</a>
                     <a className="navbar__link" href="#editing">Editing/Writing</a>
                     <a className="navbar__link" href="#voice">Voiceover/Hosting</a>
+                    <a className="navbar__link" href="#coaching">Directing/Voice Coaching</a>
                 </div>
             </div>
             <a className="navbar__link" href="#music">Music</a>

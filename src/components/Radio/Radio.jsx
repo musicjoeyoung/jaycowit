@@ -1,3 +1,4 @@
+import Coaching from "../Coaching/Coaching"
 import Editing from "../Editing/Editing"
 import SoundDesign from "../SoundDesign/SoundDesign"
 import Voice from "../Voice/Voice"
@@ -9,6 +10,7 @@ const Radio = () => {
             <SoundDesign />
             <Editing />
             <Voice />
+            <Coaching />
         </div>
     )
 }
