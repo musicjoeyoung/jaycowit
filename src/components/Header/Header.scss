@@ -6,11 +6,10 @@
     padding: 1rem 6rem 6rem 6rem;
     border-radius: 1rem;
     background-color: $lm-background2;
-    width: 60%;
-    margin: 3rem auto;
+    margin: 6rem auto;
 
     @include tablet {
-        width: 35%;
+        width: 60%;
     }
 
     &__h1 {

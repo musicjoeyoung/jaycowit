@@ -18,6 +18,10 @@
         width: 65%;
         margin: 0.5rem;
 
+        &:hover {
+            opacity: 0.7;
+        }
+
         @include tablet {
             width: 22%;
         }

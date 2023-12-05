@@ -2,9 +2,9 @@ import "./Contact.scss"
 
 const Contact = () => {
     return (
-        <div>
+        <section>
             <h2 id="contact">Contact</h2>
-        </div>
+        </section>
     )
 }
 

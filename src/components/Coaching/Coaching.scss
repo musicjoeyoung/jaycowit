@@ -1,1 +1,10 @@
 @use "../../../src/partials/mixins" as *;
+
+.coaching {
+    @include tablet {
+        padding: 0 4rem;
+    }
+    @include desktop {
+        padding: 0 7rem;
+    }
+}

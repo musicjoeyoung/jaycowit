@@ -1,5 +1,13 @@
 @use "../../../src/partials/mixins" as *;
+@use "../../../src/partials/variables" as *;
 
+.about {
+    /*     background-color: $lm-background2;
+
+    &__h2 {
+        background-color: inherit;
+    } */
+}
 .about-container {
     display: block;
     text-align: center;
