@@ -1,5 +1,5 @@
 import "./About.scss"
-import jay from "../../assets/images/JayCowit.png"
+import jay from "../../assets/images/photos/JayCowit.png"
 
 const About = () => {
     return (
