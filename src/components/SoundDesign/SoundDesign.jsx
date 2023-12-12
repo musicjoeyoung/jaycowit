@@ -22,7 +22,7 @@ const SoundDesign = () => {
     return (
         <section className="soundDesign">
             <h2 className="soundDesign__h2" id="soundDesign">Sound Design/Mixing/Audio Editing</h2>
-            <p className="soundDesign__p">Since the early 2000’s, I’ve been an editor, technical director and show director for national radio shows, including The Takeaway (WNYC/PRX), Freakonomics Radio, and The Randi Rhodes Show on Air America Radio. I’ve honed my skill at sound design, producing thousands of pre-produced intros, bits, montages and more based around breaking news, as well as entertainment/culture, and a gallimaufry of strange and random audio experiments. I’ve also sound designed theatrical off-broadway plays, and mixed sound for films.</p>
+            <p className="soundDesign__p">Since the early 2000’s, I’ve been an editor, technical director and show director for national radio shows, including The Takeaway (WNYC/PRX), Freakonomics Radio, Politics with Amy Walter, and The Randi Rhodes Show on Air America Radio. I’ve honed my skill at sound design, producing thousands of pre-produced intros, bits, montages and more based around breaking news, as well as entertainment/culture, and a gallimaufry of strange and random audio experiments. I’ve also sound designed theatrical off-broadway plays, and mixed sound for films.</p>
             <section className="show">
                 <h3 className="show__title">The Takeaway</h3>
                 <div className="shows-container">
@@ -43,20 +43,59 @@ const SoundDesign = () => {
 
             <section className="show">
                 <h3 className="show__title">Freakonomics Radio</h3>
-                <div className="shows-container">
-                    https://freakonomics.com/podcast/who-needs-handwriting/
-                    https://freakonomics.com/podcast/are-you-ready-for-a-glorious-sunset/
-                    https://freakonomics.com/podcast/should-everyone-be-in-a-rock-band/
+                <div className="freakonomics-container">
+                    <div>
+                        <a href="https://freakonomics.com/podcast/who-needs-handwriting/" target="_blank">
+                            <div className="freakonomics-container__freakonomics-card" data-title="Who Needs Handwriting?">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://freakonomics.com/podcast/are-you-ready-for-a-glorious-sunset/" target="_blank">
+                            <div className="freakonomics-container__freakonomics-card" data-title="Are You Ready for a Glorious Sunset?">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://freakonomics.com/podcast/should-everyone-be-in-a-rock-band/" target="_blank">
+                            <div className="freakonomics-container__freakonomics-card" data-title="Should Everyone Be in a Rock Band?">
+                            </div>
+                        </a>
+                    </div>
+
+
 
                     {isVisible2 && (
                         <>
-                            https://freakonomics.com/podcast/the-longest-long-shot/
-                            https://freakonomics.com/podcast/is-the-world-ready-for-a-guaranteed-basic-income/
-                            https://freakonomics.com/podcast/how-can-this-possibly-be-true/
-                            https://freakonomics.com/podcast/the-cheeseburger-diet/
+                            <div>
+                                <a href="https://freakonomics.com/podcast/the-longest-long-shot/" target="_blank">
+                                    <div className="freakonomics-container__freakonomics-card" data-title="The Longest Shot">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://freakonomics.com/podcast/is-the-world-ready-for-a-guaranteed-basic-income/" target="_blank">
+                                    <div className="freakonomics-container__freakonomics-card" data-title="Is the World Ready For a Guaranteed Basic Income?">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://freakonomics.com/podcast/how-can-this-possibly-be-true/" target="_blank">
+                                    <div className="freakonomics-container__freakonomics-card" data-title="How Can This Possibly Be True?">
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://freakonomics.com/podcast/the-cheeseburger-diet/" target="_blank">
+                                    <div className="freakonomics-container__freakonomics-card" data-title="The Cheesburger Diet">
+                                    </div>
+                                </a>
+                            </div>
+
                         </>
                     )}
                 </div>
+                <p className="show__full-list"><a href=" https://freakonomics.com/podcast-tag/jay-cowit/">FULL LIST </a>of my work for Freakonomics</p>
                 <p className="show__button" onClick={toggle2}>{isVisible2 ? 'see less' : 'see more'}</p>
             </section>
 

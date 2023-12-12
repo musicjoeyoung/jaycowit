@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <a className="navbar__link" href="#about">About</a>
-            <div className="dropdown">Radio
+            <div className="dropdown">Radio/Podcasts
                 {/*      <button className="dropbtn">Radio
                     <i className="fa fa-caret-down"></i>
                 </button> */}

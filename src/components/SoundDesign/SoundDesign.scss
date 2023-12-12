@@ -31,6 +31,16 @@
         text-align: right;
         padding: 0 4rem 1rem 0;
     }
+    &__full-list {
+        background: #9e9e9e17;
+        text-align: center;
+        margin-block-start: 0rem;
+        margin-block-end: 0rem;
+
+        a {
+            background: inherit;
+        }
+    }
 }
 .shows-container {
     background-color: #9e9e9e17;
@@ -38,5 +48,55 @@
 
     @include desktop {
         padding: 0 7rem;
+    }
+}
+
+.freakonomics-container {
+    background-color: #9e9e9e17;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+
+    @include small-mobile {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem;
+    }
+    @include desktop {
+        padding: 4rem;
+    }
+
+    &__freakonomics-card {
+        position: relative;
+        background-image: url("https://freakonomics.com/wp-content/uploads/2021/07/feature_img_1.png");
+        background-size: contain;
+        aspect-ratio: 1/1;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.5;
+
+            &::before {
+                content: attr(data-title); // Display the data-title attribute content
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgb(0 0 0 / 92%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
     }
 }
