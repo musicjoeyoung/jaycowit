@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Art.scss';
 
 const Art = () => {
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
     const [isVisible1, setIsVisible1] = useState(false);
+    const [numVisibleImages, setNumVisibleImages] = useState(4);
 
     const toggle1 = () => {
         setIsVisible1(!isVisible1);
@@ -27,11 +28,11 @@ const Art = () => {
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415383/Jay%20Cowit/GRPQ9170_xwb3kq.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415382/Jay%20Cowit/PTKG5709_wriy54.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415381/Jay%20Cowit/HXBE2983_sueobm.jpg',
-        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415374/Jay%20Cowit/IMG_5590_cawvss.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415372/Jay%20Cowit/BWSF6115_wiftvd.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415369/Jay%20Cowit/IMG_9196_umbxah.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415364/Jay%20Cowit/IMG_9521_vzblwl.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415359/Jay%20Cowit/IMG_9742_jg6n8c.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415374/Jay%20Cowit/IMG_5590_cawvss.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415388/Jay%20Cowit/SXOT9072_ccgpcp.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415382/Jay%20Cowit/IMG_7777_zfwwgu.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415380/Jay%20Cowit/IMG_8041_gc1dgg.jpg',
@@ -51,7 +52,23 @@ const Art = () => {
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415305/Jay%20Cowit/IHCU7607_tuadg8.jpg'
     ];
 
-    const visibleImages = isVisible1 ? images : images.slice(0, 8);
+    const visibleImages = isVisible1 ? images : images.slice(0, numVisibleImages);
+
+    const handleWindowResize = () => {
+        if (window.innerWidth < 760) {
+            setNumVisibleImages(4);
+        } else {
+            setNumVisibleImages(isVisible1 ? images.length : 8);
+        }
+    };
+
+    useEffect(() => {
+        handleWindowResize();
+        window.addEventListener('resize', handleWindowResize);
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, [isVisible1, images.length]);
 
     return (
         <section>
@@ -68,7 +85,7 @@ const Art = () => {
                 ))}
             </div>
 
-            {images.length > 5 && (
+            {images.length > 4 && (
                 <p className="art-container__p" onClick={toggle1}>
                     {isVisible1 ? 'Show Less' : 'Show More'}
                 </p>
