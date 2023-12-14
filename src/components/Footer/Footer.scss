@@ -24,27 +24,19 @@
         width: 55%;
     }
 
+    &__a {
+        display: flex;
+    }
+
     &__img {
-        width: 4%;
-    }
-    &__img:nth-child(1) {
-        margin: 0 0.25rem;
-    }
-    &__img:nth-child(2) {
-        width: 4.8%;
-    }
-    &__img:nth-child(3) {
-        width: 5%;
-    }
-    &__img:nth-child(4) {
-        width: 4.3%;
-        margin: 0 0.25rem;
-    }
-    &__img:nth-child(5) {
-        width: 4.3%;
-        margin: 0 0.25rem;
-    }
-    &__img:nth-child(6) {
-        width: 7.5%;
+        width: 2rem;
+
+        &--email,
+        &--facebook {
+            width: 2.3rem;
+        }
+        &--twitter {
+            width: 3.26rem;
+        }
     }
 }

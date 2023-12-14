@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Art.scss';
+import instagram from "../../assets/images/icons/instagram.svg"
 
 const Art = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -98,6 +99,12 @@ const Art = () => {
                     </div>
                 </div>
             )}
+            <div className="logo-container">
+                <a href="https://www.instagram.com/jcowit/" target='_blank' className='logo-container__a'>
+                    <img className="logo-container__instagram" src={instagram} alt="instagram logo" />
+                </a>
+                <p>See more on Instagram</p>
+            </div>
         </section>
     );
 };
