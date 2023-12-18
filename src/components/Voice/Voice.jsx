@@ -2,9 +2,12 @@ import "./Voice.scss"
 
 const Voice = () => {
     return (
-        <section>
+        <section className="voice">
             <h2 id="voice">Voiceover Artist/Hosting/On-Air Work</h2>
-            <p>I’ve had opportunities throughout my career to step out from behind the glass, and I’m equally as comfortable talking into the mic and making sounds. My voicework includes national and local radio promos, funders, advertisements, translation voiceovers, and show liners.</p>
+            <div className="voice__image-description-container">
+                <img className="voice__image" src="https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415348/Jay%20Cowit/IMG_0224_wg8lvz.jpg" alt="Jay Cowit behind a microphone" />
+                <p className="voice__description">I’ve had opportunities throughout my career to step out from behind the glass, and I’m equally as comfortable talking into the mic and making sounds. My voicework includes national and local radio promos, funders, advertisements, translation voiceovers, and show liners.</p>
+            </div>
             <div className="voice-card-container">
                 <iframe
                     allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"

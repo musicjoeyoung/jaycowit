@@ -105,6 +105,7 @@ const Art = () => {
                 </a>
                 <p>See more on Instagram</p>
             </div>
+
         </section>
     );
 };
