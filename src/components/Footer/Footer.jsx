@@ -23,10 +23,10 @@ const Footer = () => {
                 <a className="image-container__a" href="https://www.instagram.com/jcowit/" target="_blank">
                     <img className="image-container__img" src={instagram} />
                 </a>
-                <a className="image-container__a" href="https://www.linkedin.com/in/jay-cowit/" target="_blank">
+                <a className="image-container__a image-container__a--linkedin" href="https://www.linkedin.com/in/jay-cowit/" target="_blank">
                     <img className="image-container__img" src={linkedin} />
                 </a>
-                <a className="image-container__a" href="https://twitter.com/jaycowit" target="_blank">
+                <a className="image-container__a image-container__a--twitter" href="https://twitter.com/jaycowit" target="_blank">
                     <img className="image-container__img image-container__img--twitter" src={twitter} />
                 </a>
                 <a className="image-container__a" href="https://www.threads.net/@jcowit" target="_blank">

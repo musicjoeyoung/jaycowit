@@ -26,6 +26,14 @@
 
     &__a {
         display: flex;
+
+        &--linkedin {
+            margin-right: -7px;
+        }
+
+        &--twitter {
+            margin-right: -5px;
+        }
     }
 
     &__img {
