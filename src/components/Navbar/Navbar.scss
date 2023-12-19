@@ -1,42 +1,57 @@
-.navbar {
-    font-size: 1.2rem;
-    justify-content: space-evenly;
-    display: flex;
-    padding: 1rem 0rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /* height: 2rem; */
-    z-index: 3;
+@use "../../../src/partials/mixins" as *;
 
-    &__link {
-        font-weight: 400;
-        text-decoration: inherit;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
+.navbar {
+    display: none;
+
+    @include tablet {
+        font-size: 1.2rem;
+        justify-content: space-evenly;
+        display: flex;
+        padding: 1rem 0rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* height: 2rem; */
+        z-index: 3;
+
+        &__link {
+            font-weight: 400;
+            text-decoration: inherit;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+        }
     }
 }
+
 .dropdown {
     float: left;
     overflow: hidden;
+
+    &--mobile {
+        float: none;
+        background-color: #f5f5f5;
+        padding: 10px 0;
+    }
+
+    &__triangle {
+        font-size: 0.7rem;
+    }
 }
 
 .dropdown .dropbtn {
     background-color: inherit;
 }
-.dropdown:hover .dropbtn {
+/* .dropdown:hover .dropbtn {
     background-color: red;
-}
+} */
 
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f9f9f9; */
-    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 0.5rem;
@@ -59,4 +74,99 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.mobile-navbar {
+    /* height: 65px; */
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+
+    &__hamburger {
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition:
+            transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+            opacity 0.55s ease;
+        background-color: black;
+    }
+
+    &__hamburger:first-child {
+        transform-origin: 0% 0%;
+    }
+    &__hamburger:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    input {
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: #36383f;
+    }
+
+    input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    input:checked ~ ul {
+        transform: none;
+    }
+}
+
+.mobile-ul {
+    position: absolute;
+    width: 180px;
+    box-shadow: 0 0 10px #85888c;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #f5f6fa;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    &__li {
+        padding: 10px 0;
+        transition-delay: 2s;
+        list-style-type: none;
+        background: #f5f5f5;
+    }
+    &__a {
+        background: #f5f5f5;
+        text-decoration: none;
+    }
 }
