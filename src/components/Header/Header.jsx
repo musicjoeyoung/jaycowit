@@ -1,8 +1,8 @@
 import "./Header.scss"
 
-const Header = () => {
+const Header = ({ darkMode }) => {
     return (
-        <header className="header">
+        <header className={`header ${darkMode ? 'dark' : ''}`}>
             <h1 className="header__h1">Jay Cowit</h1>
             <div className="titles-container">
                 {/* <span>Animations are </span> */}

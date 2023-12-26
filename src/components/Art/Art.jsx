@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Art.scss';
 import instagram from "../../assets/images/icons/instagram.svg"
 
-const Art = () => {
+const Art = ({ darkMode }) => {
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
     const [isVisible1, setIsVisible1] = useState(false);
@@ -72,7 +72,7 @@ const Art = () => {
     }, [isVisible1, images.length]);
 
     return (
-        <section>
+        <section className={`${darkMode ? 'dark' : ''}`}>
             <h2 id="art">Art</h2>
             <div className="art-container">
                 {visibleImages.map((imageUrl, index) => (

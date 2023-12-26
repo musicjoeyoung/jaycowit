@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { woundedBuffaloTheoryImageUrls } from "./imageUrls";
 import { woundedBuffaloTheoryAlbumValues } from "./albumsValues";
 
-const AlbumSelector2 = () => {
+const AlbumSelector2 = ({ darkMode }) => {
     const [selectedAlbum, setSelectedAlbum] = useState('2560100843');
     const [selectedImage, setSelectedImage] = useState(
         'https://f4.bcbits.com/img/a2452525750_2.jpg'
@@ -23,7 +23,7 @@ const AlbumSelector2 = () => {
     const visibleAlbums = isVisible ? albums : albums.slice(0, 4);
 
     return (
-        <div className="album-selector">
+        <div className={`album-selector ${darkMode ? 'dark' : ''}`}>
             <h3 className="album-selector__title">Wounded Buffalo Theory</h3>
             <iframe
                 style={{ border: 0, width: '350px', height: '470px', marginTop: '20px' }}

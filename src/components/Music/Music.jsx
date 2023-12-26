@@ -3,9 +3,9 @@ import AlbumSelector1 from "../AlbumSelectors/AlbumSelector1"
 import AlbumSelector2 from "../AlbumSelectors/AlbumSelector2"
 import AlbumSelector3 from "../AlbumSelectors/AlbumSelector3"
 
-const Music = () => {
+const Music = ({ darkMode }) => {
     return (
-        <section className="music">
+        <section className={`music ${darkMode ? 'dark' : ''}`}>
             <h2 className="music__h2" id="music">Music</h2>
             <p className="music__p">I compose, produce, and perform music under the name J. Cowit. I’ve released nearly 30 albums of music as a solo artist, as well as scores of albums with my old bands Wounded Buffalo Theory and The Sometime Boys. I also compose for radio/audio: I created hundreds of instrumental bumper tracks for The Takeaway, scored full episodes of Freakonomics Radio, provided promo music for The Library with Tim Einenkel, and supplied the theme music for Politics With Amy Walter (“Enter the Dragon”). I’d love to score/produce music for your project, fit to order! Let’s talk about what we can do to make your project sing. Here are some links to my produced music.</p>
 

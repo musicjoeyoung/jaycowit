@@ -7,9 +7,9 @@ import linkedin from "../../assets/images/icons/linkedin.svg"
 import twitter from "../../assets/images/icons/twitter.svg"
 import threads from "../../assets/images/icons/threads.svg"
 
-const Footer = () => {
+const Footer = ({ darkMode }) => {
     return (
-        <footer className="footer">
+        <footer className={`footer ${darkMode ? 'dark' : ''}`}>
             <div className="image-container">
                 <a className="image-container__a" href="https://jcowit.bandcamp.com/" target="_blank">
                     <img className="image-container__img" src={bandcamp} />

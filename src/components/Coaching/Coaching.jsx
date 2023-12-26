@@ -1,7 +1,7 @@
 import "./Coaching.scss";
 import { useState } from 'react';
 
-const Coaching = () => {
+const Coaching = ({ darkMode }) => {
     const [showQuote1, setShowQuote1] = useState(false);
     const [showQuote2, setShowQuote2] = useState(false);
 
@@ -19,7 +19,7 @@ const Coaching = () => {
             doesn't fail to touch all the bases from breath control to the enhancing of script
             structure. On top of this Jay is ethical and extremely fun to work with. If you
             work with him expect constructive and direct criticism. Take this criticism with
-            you and apply it, the results will never cease to amaze you.
+            you and apply it, the results will never cease to amaze you”.
         </>
     );
 
@@ -36,14 +36,15 @@ const Coaching = () => {
     )
 
     return (
-        <section className="coaching">
+        <section className={`coaching ${darkMode ? 'dark' : ''}`}>
             <h2 id="coaching">Directing/Voice Coaching</h2>
             <p >Over two decades in radio/audio, I’ve worked with myriad talent in bringing their voice out to the audience. From rookies to veterans - I’m an experienced director and vocal coach who can help you sound your best. My coaching sessions can help you tackle hard news, promos, advertisements, entertainment, talk shows, or even just help on getting better at being interviewed. In addition to your own speaking style, we can work on everything from your speaking style to technical issues in order to make you sound your best across platforms.</p>
             <h3>Below are some testimonials from folks I've worked with:</h3>
 
             <h4>Ceci Ponce from See See by Ceci Podcast.</h4>
             <p className="coaching__quote">
-                “If Jay Cowit were a tailor, he'd be a brilliant craftsman making custom-made-suits. And that's exactly what Jay does, {" "}
+                “If Jay Cowit were a tailor, he'd be a brilliant craftsman making custom-made-
+                suits. And that's exactly what Jay does, {" "}
                 {showQuote1 ? quote1 : null}
             </p>
             {showQuote1 ? <p className="coaching__see-more" onClick={toggleQuote1}>see less</p> : <p className="coaching__see-more" onClick={toggleQuote1}>see more</p>}

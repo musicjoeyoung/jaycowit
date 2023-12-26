@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { jayCowitImageUrls } from './imageUrls';
 import { jayCowitAlbumValues } from './albumsValues';
 
-const AlbumSelector1 = () => {
+const AlbumSelector1 = ({ darkMode }) => {
     const [selectedAlbum, setSelectedAlbum] = useState('1826326894');
     const [selectedImage, setSelectedImage] = useState(
         'https://f4.bcbits.com/img/a1794076124_2.jpg'
@@ -26,7 +26,7 @@ const AlbumSelector1 = () => {
     const visibleAlbums = isVisible ? albums : albums.slice(0, 4);
 
     return (
-        <div className="album-selector">
+        <div className={`album-selector ${darkMode ? 'dark' : ''}`}>
             <h3 className="album-selector__title">J. Cowit</h3>
             {/* Embedded Bandcamp player */}
             <iframe

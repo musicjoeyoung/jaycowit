@@ -1,12 +1,12 @@
 import "./AlbumSelector.scss"
 
-const AlbumSelector3 = () => {
+const AlbumSelector3 = ({ darkMode }) => {
 
     const albumUrl = 'https://thesometimeboys.bandcamp.com/album/the-perfect-home';
     const albumId = '4014001614';
 
     return (
-        <div className="album-selector album-selector--last">
+        <div className={`album-selector album-selector--last ${darkMode ? 'dark' : ''}`}>
             <h3 className="album-selector__title">The Sometimes Boys</h3>
             <iframe
                 style={{ border: 0, width: '350px', height: '470px' }}
