@@ -8,6 +8,12 @@
 
     &--last {
         border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &__website {
+        background-color: inherit;
+        margin: 1rem 0 2rem 0;
     }
 }
 .albums-container {

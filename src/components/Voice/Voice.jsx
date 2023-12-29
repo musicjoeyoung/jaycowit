@@ -52,7 +52,11 @@ const Voice = () => {
                     src="https://embed.podcasts.apple.com/us/podcast/a-look-at-coachella-2023-weekend-one/id363143310?i=1000610127360"
                 ></iframe>
             </div>
-            <p>I also do voice over work for video games, some of which should be available very soon. I can do characters, or any kind of tone you may need.</p>
+            {/* <p>I also do voice over work for video games, some of which should be available very soon. I can do characters, or any kind of tone you may need.</p> */}
+            <p>I do voice over and character work for video games. Here's an example of a trailer voice over I did for North Shore Games:</p>
+            <div className="voice__youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xhX4NOMDEnY?si=S_IlOfZugAL9FX7W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>
 
             <p>Commercial/Promo Reels available <a href="mailto:jaycowit@gmail.com?subject=Commercial/Promo Reels">upon request</a></p>
         </section>

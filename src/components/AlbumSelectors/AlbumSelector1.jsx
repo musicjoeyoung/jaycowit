@@ -4,9 +4,9 @@ import { jayCowitImageUrls } from './imageUrls';
 import { jayCowitAlbumValues } from './albumsValues';
 
 const AlbumSelector1 = ({ darkMode }) => {
-    const [selectedAlbum, setSelectedAlbum] = useState('1826326894');
+    const [selectedAlbum, setSelectedAlbum] = useState('1306776611');
     const [selectedImage, setSelectedImage] = useState(
-        'https://f4.bcbits.com/img/a1794076124_2.jpg'
+        'https://f4.bcbits.com/img/a2211902437_2.jpg'
     );
     const [isVisible, setIsVisible] = useState(false);
 

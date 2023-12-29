@@ -15,6 +15,8 @@ const AlbumSelector3 = ({ darkMode }) => {
             >
                 <a href={albumUrl}>The Perfect Home by The Sometime Boys</a>
             </iframe>
+
+            <a className="album-selector__website" href="https://www.thesometimeboys.com/" target="_blank">Website</a>
         </div>
     );
 };

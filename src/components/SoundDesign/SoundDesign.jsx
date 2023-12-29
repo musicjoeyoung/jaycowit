@@ -107,7 +107,7 @@ const SoundDesign = () => {
                         </>
                     )}
                 </div>
-                <p className="show__full-list"><a href=" https://freakonomics.com/podcast-tag/jay-cowit/">FULL LIST </a>of my work for Freakonomics</p>
+                <p className="show__full-list"><a href=" https://freakonomics.com/podcast-tag/jay-cowit/">FULL LIST</a> of my work for Freakonomics</p>
                 <p className="show__button" onClick={toggle2}>{isVisible2 ? 'see less' : 'see more'}</p>
             </section>
 
@@ -162,9 +162,13 @@ const SoundDesign = () => {
 
             <section className="show">
                 <div className="show-name-container">
-                    <h3 className="show__title">other</h3>
+                    <h3 className="show__title">Special and Assorted Podcasts</h3>
                 </div>
                 <div className="shows-container">
+                    <iframe className="axios" frameBorder="0" height="482" scrolling="no" src="https://playlist.megaphone.fm/?e=AXIOS9350647648"
+                        width="100%"></iframe>
+                    <iframe className="axios" frameBorder="0" height="482" scrolling="no" src="https://playlist.megaphone.fm/?e=AXIOS5915642521"
+                        width="100%"></iframe>
                     <iframe
                         allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
                         frameBorder="0"
