@@ -88,7 +88,7 @@ const Art = ({ darkMode }) => {
 
             {images.length > 4 && (
                 <p className="art-container__p" onClick={toggle1}>
-                    {isVisible1 ? 'Show Less' : 'Show More'}
+                    {isVisible1 ? 'see less' : 'see more'}
                 </p>
             )}
 

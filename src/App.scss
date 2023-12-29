@@ -1,9 +1,12 @@
-@use "./partials/_typography.scss" as *;
-@use "./partials/_variables" as *;
+@use "./partials/typography" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
 
-* {
+*,
+body,
+html {
   font-family: "Quicksand", sans-serif;
-  background-color: $lm-background;
+  //background-color: $lm-background;
   color: #384e77;
 }
 #root {
@@ -22,7 +25,50 @@ section {
   padding: 2rem;
 }
 
+a:hover {
+  background-color: $lm-hover;
+  height: 100%;
+}
+
+body:not(:has(.dark)) {
+  background-color: $lm-background;
+}
+
+body:has(.dark) {
+  background-color: $dm-background;
+  color: $dm-text;
+}
+
 .dark {
-  background-color: black !important;
-  color: white;
+  background-color: $dm-background !important;
+  color: $dm-text !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a,
+  .dropdown,
+  div {
+    background-color: $dm-background !important;
+    color: $dm-text !important;
+  }
+
+  &--element {
+    background-color: $dm-foreground-elements !important;
+    @include dm-shadow;
+
+    p,
+    h1 {
+      background-color: inherit;
+      color: $dm-text;
+    }
+  }
+  a:hover {
+    background-color: $dm-hover !important;
+    color: $dm-foreground-elements !important;
+    height: 100%;
+  }
 }

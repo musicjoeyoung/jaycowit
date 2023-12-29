@@ -5,7 +5,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
     return (
         <>
             <nav className={`navbar ${darkMode ? 'dark' : ''}`}>
-                {/*  <p onClick={() => setDarkMode(!darkMode)}>Dark Mode</p> */}
+                <p onClick={() => setDarkMode(!darkMode)}>Dark Mode</p>
                 {/* {console.log(darkMode)} */}
                 <a className="navbar__link" href="#about">About</a>
                 <div className="dropdown">Radio/Podcasts <span className="dropdown__triangle">▼</span>

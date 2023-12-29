@@ -4,7 +4,7 @@ import takeaway from "../../assets/images/icons/TheTakeway.png"
 import freakonomics from "../../assets/images/icons/freakonomics.png"
 import nal from "../../assets/images/icons/NewAmericanLeft.jpeg"
 
-const SoundDesign = () => {
+const SoundDesign = ({ darkMode }) => {
     const [isVisible1, setIsVisible1] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
     const [isVisible3, setIsVisible3] = useState(false);
@@ -23,7 +23,7 @@ const SoundDesign = () => {
         setIsVisible4(!isVisible4)
     };
     return (
-        <section className="soundDesign">
+        <section className={`soundDesign ${darkMode ? 'dark' : ''}`}>
 
             <h2 className="soundDesign__h2" id="soundDesign">Sound Design/Mixing/Audio Editing</h2>
             <p className="soundDesign__p">Since the early 2000’s, I’ve been a sound designer, editor, technical director, and show director for national radio shows, including The Takeaway (WNYC/PRX), Freakonomics Radio, Politics with Amy Walter, 1 Big Thing (Axios) and The Randi Rhodes Show on Air America Radio. I’ve honed my skill at sound design, producing thousands of pre-produced intros, bits, montages and more based around breaking news, as well as entertainment/culture, and a gallimaufry of strange and random audio experiments. I’ve also sound designed theatrical off-broadway plays, and mixed sound for films.</p>
