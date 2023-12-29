@@ -23,11 +23,11 @@ const SoundDesign = ({ darkMode }) => {
         setIsVisible4(!isVisible4)
     };
     return (
-        <section className={`soundDesign ${darkMode ? 'dark' : ''}`}>
+        <section className={`soundDesign ${darkMode ? `dark` && `dark--darkSoundDesign` : ''}`}>
 
             <h2 className="soundDesign__h2" id="soundDesign">Sound Design/Mixing/Audio Editing</h2>
             <p className="soundDesign__p">Since the early 2000’s, I’ve been a sound designer, editor, technical director, and show director for national radio shows, including The Takeaway (WNYC/PRX), Freakonomics Radio, Politics with Amy Walter, 1 Big Thing (Axios) and The Randi Rhodes Show on Air America Radio. I’ve honed my skill at sound design, producing thousands of pre-produced intros, bits, montages and more based around breaking news, as well as entertainment/culture, and a gallimaufry of strange and random audio experiments. I’ve also sound designed theatrical off-broadway plays, and mixed sound for films.</p>
-            <section className="show">
+            <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
                     <img src={takeaway} className="show__logo" />
                     <h3 className="show__title">The Takeaway</h3>
@@ -49,7 +49,7 @@ const SoundDesign = ({ darkMode }) => {
                 <p className="show__button" onClick={toggle1}>{isVisible1 ? 'see less' : 'see more'}</p>
             </section>
 
-            <section className="show">
+            <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
                     <img src={freakonomics} className="show__logo show__logo--freakonomics" />
                     <h3 className="show__title">Freakonomics Radio</h3>
@@ -111,7 +111,7 @@ const SoundDesign = ({ darkMode }) => {
                 <p className="show__button" onClick={toggle2}>{isVisible2 ? 'see less' : 'see more'}</p>
             </section>
 
-            <section className="show">
+            <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
                     <img src={takeaway} className="show__logo" />
                     <h3 className="show__title">Politics with Amy Walter (WNYC/PRX)</h3>
@@ -135,7 +135,7 @@ const SoundDesign = ({ darkMode }) => {
                 <p className="show__button" onClick={toggle4}>{isVisible4 ? 'see less' : 'see more'}</p>
             </section>
 
-            <section className="show">
+            <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
                     <h3 className="show__title">Original Scores</h3>
                 </div>
@@ -160,7 +160,7 @@ const SoundDesign = ({ darkMode }) => {
                 {/* <p className="show__button" onClick={toggle3}>{isVisible3 ? 'see less' : 'see more'}</p> */}
             </section>
 
-            <section className="show">
+            <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
                     <h3 className="show__title">Special and Assorted Podcasts</h3>
                 </div>

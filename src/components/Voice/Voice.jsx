@@ -2,7 +2,7 @@ import "./Voice.scss"
 
 const Voice = ({ darkMode }) => {
     return (
-        <section className={`voice ${darkMode ? 'dark' : ''}`}>
+        <section className={`voice ${darkMode ? 'dark' && 'dark--darkVoice' : ''}`}>
             <h2 id="voice">Voiceover Artist/Hosting/On-Air Work</h2>
             <div className="voice__image-description-container">
                 <img className="voice__image" src="https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415348/Jay%20Cowit/IMG_0224_wg8lvz.jpg" alt="Jay Cowit behind a microphone" />

@@ -2,10 +2,10 @@ import "./Navbar.scss"
 import resume from "../../../src/assets/documents/JayCowit_RESUME.pdf"
 
 const Navbar = ({ setDarkMode, darkMode }) => {
+    const toggleSvg = darkMode ? 'toggle-dm.svg' : 'toggle-lm.svg';
     return (
         <>
-            <nav className={`navbar ${darkMode ? 'dark' : ''}`}>
-                <p onClick={() => setDarkMode(!darkMode)}>Dark Mode</p>
+            <nav className={`navbar ${darkMode ? 'dark' && 'dark--darkNavbar' : ''}`}>
                 {/* {console.log(darkMode)} */}
                 <a className="navbar__link" href="#about">About</a>
                 <div className="dropdown">Radio/Podcasts <span className="dropdown__triangle">▼</span>
@@ -24,17 +24,22 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__link" href="#press">Press</a>
                 <a className="navbar__link" href={resume} target="_blank">Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
+                <a className="navbar__toggle-a" onClick={() => setDarkMode(!darkMode)}>
+                    <img className="navbar__toggle-img" src={`/src/assets/images/icons/${toggleSvg}`} />
+                </a>
+                <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} />
             </nav>
 
             {/* mobile hamburger menu */}
-            <nav className="mobile-navbar">
+            <nav className={`mobile-navbar ${darkMode ? 'dark--darkMobileNavbar' : ''}`} >
                 <div className="menuToggle">
                     <input type="checkbox" />
                     <span className="menuToggle__hamburger"></span>
                     <span className="menuToggle__hamburger"></span>
                     <span className="menuToggle__hamburger"></span>
 
-                    <ul className="mobile-ul">
+
+                    <ul className={`mobile-ul ${darkMode ? 'dark--darkMobileUl' : ''}`}>
                         <li className="mobile-ul__li">
                             <a className="mobile-ul__a" href="#about">About</a>
                         </li>

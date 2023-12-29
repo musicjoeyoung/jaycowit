@@ -2,7 +2,7 @@ import "./Press.scss"
 
 const Press = ({ darkMode }) => {
     return (
-        <section className={`${darkMode ? 'dark' : ''}`}>
+        <section className={`${darkMode ? 'dark' && 'dark--darkPress' : ''}`}>
             <h2 id="press">Press</h2>
             <ul>
                 <li><p><a href="https://transom.org/2016/morphing-print-essays-radio/">Morphin Print Essays into Radio</a> (Transom piece about my sound design work for The Takeaway)</p></li>

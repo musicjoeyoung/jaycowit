@@ -2,7 +2,7 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
-*,
+/* *, */
 body,
 html {
   font-family: "Quicksand", sans-serif;
@@ -23,6 +23,11 @@ h2 {
 }
 section {
   padding: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 a:hover {
@@ -66,9 +71,109 @@ body:has(.dark) {
       color: $dm-text;
     }
   }
+  &--darkSoundDesign {
+    background-color: $dm-foreground-elements !important;
+    color: $dm-text !important;
+  }
+  &--darkMusic {
+    background-color: $dm-background !important;
+    .album-selector,
+    .albums-container,
+    .seeMore,
+    .videos,
+    .youtube,
+    .title {
+      background-color: inherit;
+      color: $dm-text;
+
+      &__div {
+        background-color: inherit;
+      }
+      a {
+        color: $dm-text;
+        &:hover {
+          color: $lm-text;
+        }
+      }
+    }
+  }
+  &--darkShow {
+    background-color: $dm-background !important;
+    @include dm-shadow;
+    a {
+      color: $dm-text !important;
+      &:hover {
+        color: $lm-text !important;
+      }
+    }
+  }
+  &--darkVoice {
+    background-color: $dm-background !important;
+
+    .voice-card-container {
+      @include dm-shadow;
+      background-color: $dm-foreground-elements;
+    }
+  }
+  &--darkPress {
+    a {
+      color: $dm-text;
+
+      &:hover {
+        color: $lm-text;
+      }
+    }
+  }
+  &--darkNavbar {
+    background-color: $dm-background !important;
+
+    a {
+      color: $dm-text;
+      &:hover {
+        color: $lm-text;
+      }
+    }
+    .dropdown-content {
+      background-color: $dm-background !important;
+    }
+    .dropdown-content a {
+      padding: 12px 15px;
+      &:hover {
+        color: $lm-text;
+      }
+    }
+  }
+  &--darkMobileNavbar {
+    span {
+      background-color: $dm-text;
+    }
+    .dropdown__triangle {
+      background-color: $dm-background;
+    }
+    input:checked ~ span,
+    .menuToggle__hamburger {
+      background: $dm-text !important;
+    }
+  }
+  &--darkMobileUl {
+    background-color: $dm-background !important;
+    li,
+    a,
+    .dropdown--mobile {
+      background-color: $dm-background !important;
+      color: $dm-text;
+    }
+    a {
+      color: $dm-text;
+      &:hover {
+        color: $lm-text;
+      }
+    }
+  }
   a:hover {
     background-color: $dm-hover !important;
     color: $dm-foreground-elements !important;
     height: 100%;
+    padding: 0 15px;
   }
 }

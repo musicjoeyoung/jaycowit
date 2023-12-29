@@ -30,7 +30,7 @@
     }
     &__logo {
         width: 7%;
-        background: rgba(158, 158, 158, 0.0901960784);
+        //background: rgba(158, 158, 158, 0.0901960784);
 
         &--freakonomics {
             width: 20%;
@@ -51,6 +51,7 @@
 
         a {
             background: transparent;
+            color: $lm-text;
 
             &:hover {
                 background-color: $lm-hover;
@@ -133,7 +134,7 @@
             justify-content: center;
             color: #fff;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             opacity: 1;
             transition: opacity 0.2s;
         }
