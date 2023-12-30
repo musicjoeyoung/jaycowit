@@ -10,6 +10,7 @@ import Press from './components/Press/Press'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import ComingSoon from './prelaunch/ComingSoon/ComingSoon'
+import ScrollArrow from './components/ScrollArrow/ScrollArrow'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -18,7 +19,7 @@ function App() {
     <>
       {/* <ComingSoon /> */}
       <Navbar setDarkMode={setDarkMode} darkMode={darkMode} />
-      <Header darkMode={darkMode} />
+      <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <About darkMode={darkMode} />
       <Radio darkMode={darkMode} />
       <Music darkMode={darkMode} />
@@ -26,6 +27,7 @@ function App() {
       <Press darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
+      <ScrollArrow darkMode={darkMode} />
     </>
   )
 }

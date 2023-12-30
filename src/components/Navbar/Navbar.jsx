@@ -27,7 +27,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__toggle-a" onClick={() => setDarkMode(!darkMode)}>
                     <img className="navbar__toggle-img" src={`/src/assets/images/icons/${toggleSvg}`} />
                 </a>
-                <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} />
+                {/* <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} /> */}
             </nav>
 
             {/* mobile hamburger menu */}

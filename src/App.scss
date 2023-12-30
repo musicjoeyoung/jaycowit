@@ -61,6 +61,11 @@ body:has(.dark) {
     color: $dm-text !important;
   }
 
+  &--arrow {
+    color: white;
+    background-color: transparent !important;
+  }
+
   &--element {
     background-color: $dm-foreground-elements !important;
     @include dm-shadow;
@@ -89,10 +94,12 @@ body:has(.dark) {
       &__div {
         background-color: inherit;
       }
-      a {
+      a,
+      .title {
         color: $dm-text;
         &:hover {
           color: $lm-text;
+          background-color: $dm-hover;
         }
       }
     }

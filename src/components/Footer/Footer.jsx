@@ -4,8 +4,8 @@ import email from "../../assets/images/icons/email.svg"
 import facebook from "../../assets/images/icons/facebook.svg"
 import instagram from "../../assets/images/icons/instagram.svg"
 import linkedin from "../../assets/images/icons/linkedin.svg"
-import twitter from "../../assets/images/icons/twitter.svg"
-import threads from "../../assets/images/icons/threads.svg"
+import twitter from "../../assets/images/icons/x-logo.png"
+import threads from "../../assets/images/icons/threads-logo.png"
 
 const Footer = ({ darkMode }) => {
     return (
@@ -29,8 +29,8 @@ const Footer = ({ darkMode }) => {
                 <a className="image-container__a image-container__a--twitter" href="https://twitter.com/jaycowit" target="_blank">
                     <img className="image-container__img image-container__img--twitter" src={twitter} />
                 </a>
-                <a className="image-container__a" href="https://www.threads.net/@jcowit" target="_blank">
-                    <img className="image-container__img" src={threads} />
+                <a className="image-container__a " href="https://www.threads.net/@jcowit" target="_blank">
+                    <img className="image-container__img image-container__img--threads" src={threads} />
                 </a>
             </div>
             <h6 className="footer__h6">©Jay Cowit. All rights reserved.</h6>

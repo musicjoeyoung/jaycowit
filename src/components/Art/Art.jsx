@@ -50,7 +50,31 @@ const Art = ({ darkMode }) => {
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415307/Jay%20Cowit/UKTF7495_egkisb.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415307/Jay%20Cowit/UROP6979_b2ghlg.jpg',
         'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415307/Jay%20Cowit/IMG_2978_s9rosj.jpg',
-        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415305/Jay%20Cowit/IHCU7607_tuadg8.jpg'
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415305/Jay%20Cowit/IHCU7607_tuadg8.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902891/Jay%20Cowit/IMG_7357_ihb9wi.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902896/Jay%20Cowit/IMG_7323_as9vcb.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902899/Jay%20Cowit/IMG_1626_1_bvr8ra.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902903/Jay%20Cowit/IMG_1335_1_lsoigy.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902909/Jay%20Cowit/IMG_7332_n9xd0m.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902910/Jay%20Cowit/IMG_4902_woj5nm.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902916/Jay%20Cowit/IMG_1249_1_spwo0f.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902917/Jay%20Cowit/IMG_0979_1_sjjkci.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902917/Jay%20Cowit/IMG_1187_1_eaoj5q.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902918/Jay%20Cowit/IMG_1404_dv7xq6.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902920/Jay%20Cowit/IMG_1652_1_y7vb98.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902921/Jay%20Cowit/IMG_1125_rquaml.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902928/Jay%20Cowit/IMG_0437_d5aujx.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902937/Jay%20Cowit/IMG_0621_1_j1o5xy.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902937/Jay%20Cowit/IMG_9964_1_epwuwt.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902937/Jay%20Cowit/IMG_0436_ybbgu2.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902939/Jay%20Cowit/IMG_9582_1_e1yv4o.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902941/Jay%20Cowit/IMG_7769_uvxge0.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902944/Jay%20Cowit/IMG_7364_iraqnh.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902950/Jay%20Cowit/IMG_E7744_t7r6sn.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902950/Jay%20Cowit/IMG_9815_nn3lvq.jpg',
+        'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703902951/Jay%20Cowit/IMG_7748_ssbcic.jpg'
+
+
     ];
 
     const visibleImages = isVisible1 ? images : images.slice(0, numVisibleImages);
