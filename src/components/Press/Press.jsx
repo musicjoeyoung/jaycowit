@@ -4,6 +4,7 @@ const Press = ({ darkMode }) => {
     return (
         <section className={`${darkMode ? 'dark' && 'dark--darkPress' : ''}`}>
             <h2 id="press">Press</h2>
+            <img className="pressImg" src="https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415364/Jay%20Cowit/VMTZ0714_vmz3fi.jpg" />
             <ul>
                 <li><p><a target="_blank" href="https://transom.org/2016/morphing-print-essays-radio/">Morphin Print Essays into Radio</a> (Transom piece about my sound design work for The Takeaway)</p></li>
 
@@ -12,6 +13,7 @@ const Press = ({ darkMode }) => {
                 <li><p><a target="_blank" href="https://rollcall.com/2012/03/20/political-remix/https://rollcall.com/2012/03/20/political-remix/">Political Remix</a> (Roll Call article about a Nancy Pelosi remix on The Takeaway)</p ></li>
 
                 <li><p><a target="_blank" href="https://newyorkmusicdaily.wordpress.com/2016/02/17/thesometimeboys/">Two Shows in a Week…</a> (NY Daily review of The Sometime Boys live)</p ></li>
+
 
                 <li><p><a target="_blank" href="https://playbill.com/article/cast-set-for-world-premiere-of-9-11-themed-9-10">Cast Set for World Premier of 9 / 10</a> (sound design for theater)</p ></li>
 
