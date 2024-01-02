@@ -7,7 +7,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
     const toggleSvg = darkMode ? toggleDm : toggleLm;
     return (
         <>
-            <nav className={`navbar ${darkMode ? 'dark' && 'dark--darkNavbar' : ''}`}>
+            <nav className={`navbar ${darkMode ? 'dark dark--darkNavbar' : ''}`}>
                 {/* {console.log(darkMode)} */}
                 <a className="navbar__link" href="#about">About</a>
                 <div className="dropdown">Radio/Podcasts <span className="dropdown__triangle">▼</span>
@@ -26,7 +26,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__link" href="#press">Press</a>
                 <a className="navbar__link" href={resume} target="_blank">Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
-                <a className="navbar__toggle-a" onClick={() => setDarkMode(!darkMode)}>
+                <a className="navbar__toggle-a" onClick={() => setDarkMode(prevDarkMode => !prevDarkMode)}>
                     <img className="navbar__toggle-img" src={toggleSvg} alt="light/dark toggle" />
                 </a>
                 {/* <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} /> */}

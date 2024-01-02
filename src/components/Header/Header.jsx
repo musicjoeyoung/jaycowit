@@ -7,7 +7,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     const toggleSvg = darkMode ? toggleDm : toggleLm;
     return (
         <header className={`header ${darkMode ? `dark` && `dark--element` : ''}`}>
-            <img className="header__toggle-mobile" src={toggleSvg} onClick={() => setDarkMode(!darkMode)} alt="light/dark toggle" />
+            <img className="header__toggle-mobile" src={toggleSvg} onClick={() => setDarkMode(prevDarkMode => !prevDarkMode)} alt="light/dark toggle" />
             <h1 className="header__h1">Jay Cowit</h1>
             <div className="titles-container">
                 {/* <span>Animations are </span> */}
