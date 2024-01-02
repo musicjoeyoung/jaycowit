@@ -29,7 +29,7 @@ const SoundDesign = ({ darkMode }) => {
             <p className="soundDesign__p">Since the early 2000’s, I’ve been a sound designer, editor, technical director, and show director for national radio shows, including The Takeaway (WNYC/PRX), Freakonomics Radio, Politics with Amy Walter, 1 Big Thing (Axios) and The Randi Rhodes Show on Air America Radio. I’ve honed my skill at sound design, producing thousands of pre-produced intros, bits, montages and more based around breaking news, as well as entertainment/culture, and a gallimaufry of strange and random audio experiments. I’ve also sound designed theatrical off-broadway plays, and mixed sound for films.</p>
             <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
-                    <img src={takeaway} className="show__logo" />
+                    <img src={takeaway} className="show__logo" alt="The Takeaway Logo" />
                     <h3 className="show__title">The Takeaway (WNYC/PRX)</h3>
                 </div>
 
@@ -51,7 +51,7 @@ const SoundDesign = ({ darkMode }) => {
 
             <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
-                    <img src={freakonomics} className="show__logo show__logo--freakonomics" />
+                    <img src={freakonomics} className="show__logo show__logo--freakonomics" alt="Freakonomics logo" />
                     <h3 className="show__title">Freakonomics Radio</h3>
                 </div>
 
@@ -113,7 +113,7 @@ const SoundDesign = ({ darkMode }) => {
 
             <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
-                    <img src={takeaway} className="show__logo" />
+                    <img src={takeaway} className="show__logo" alt="The Takeaway logo" />
                     <h3 className="show__title">Politics with Amy Walter (WNYC/PRX)</h3>
                 </div>
 

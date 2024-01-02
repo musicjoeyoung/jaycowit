@@ -25,7 +25,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__link" href={resume} target="_blank">Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
                 <a className="navbar__toggle-a" onClick={() => setDarkMode(!darkMode)}>
-                    <img className="navbar__toggle-img" src={`/src/assets/images/icons/${toggleSvg}`} />
+                    <img className="navbar__toggle-img" src={`/src/assets/images/icons/${toggleSvg}`} alt="light/dark toggle" />
                 </a>
                 {/* <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} /> */}
             </nav>

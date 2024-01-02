@@ -119,7 +119,7 @@ const Art = ({ darkMode }) => {
             {modalVisible && (
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal">
-                        <img src={selectedImage} alt="" />
+                        <img src={selectedImage} alt="image from gallery" />
                     </div>
                 </div>
             )}

@@ -4,7 +4,7 @@ const Press = ({ darkMode }) => {
     return (
         <section className={`${darkMode ? 'dark' && 'dark--darkPress' : ''}`}>
             <h2 id="press">Press</h2>
-            <img className="pressImg" src="https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415364/Jay%20Cowit/VMTZ0714_vmz3fi.jpg" />
+            <img className="pressImg" src="https://res.cloudinary.com/dfbuwtl5q/image/upload/v1702415364/Jay%20Cowit/VMTZ0714_vmz3fi.jpg" alt="Jay Cowit" />
             <ul>
                 <li><p><a target="_blank" href="https://transom.org/2016/morphing-print-essays-radio/">Morphin Print Essays into Radio</a> (Transom piece about my sound design work for The Takeaway)</p></li>
 
