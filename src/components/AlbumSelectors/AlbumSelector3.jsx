@@ -13,7 +13,7 @@ const AlbumSelector3 = ({ darkMode }) => {
                 src={`https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/`}
                 seamless
             >
-                <a href={albumUrl}>The Perfect Home by The Sometime Boys</a>
+                <a href={albumUrl} >The Perfect Home by The Sometime Boys</a>
             </iframe>
 
             <a className="album-selector__website" href="https://www.thesometimeboys.com/" target="_blank">Website</a>

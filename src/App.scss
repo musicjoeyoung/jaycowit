@@ -151,6 +151,7 @@ body:has(.dark) {
     }
   }
   &--darkMobileNavbar {
+    background-color: $dm-background !important;
     span {
       background-color: $dm-text;
     }

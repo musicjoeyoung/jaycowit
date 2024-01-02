@@ -39,6 +39,8 @@ const AlbumSelector1 = ({ darkMode }) => {
                 </a>
             </iframe>
 
+            <h4>Discography</h4>
+
             {/* Buttons and corresponding images rendered horizontally */}
             <div className="albums-container">
                 {visibleAlbums.map((album, index) => (

@@ -52,6 +52,10 @@
             width: 560px;
         }
     }
+    &__singleVideo {
+        display: flex;
+        margin: 0 auto;
+    }
 }
 .youtube {
     display: flex;

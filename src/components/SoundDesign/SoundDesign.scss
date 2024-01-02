@@ -7,6 +7,10 @@
     &__h2,
     &__p {
         background-color: inherit;
+
+        &--originalScores {
+            background-color: transparent;
+        }
     }
 }
 
@@ -61,6 +65,7 @@
 }
 .show-name-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background: rgba(158, 158, 158, 0.0901960784);
     padding: 1rem;

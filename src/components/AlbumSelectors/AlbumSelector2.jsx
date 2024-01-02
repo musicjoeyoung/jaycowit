@@ -30,10 +30,11 @@ const AlbumSelector2 = ({ darkMode }) => {
                 src={`https://bandcamp.com/EmbeddedPlayer/album=${selectedAlbum}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/`}
                 seamless
             >
-                <a href={`https://jcowit.bandcamp.com/album/album-${selectedAlbum}`}>
+                <a href={`https://jcowit.bandcamp.com/album/album-${selectedAlbum}`} >
                     Album by j. cowit and The Ruthless Orchestra
                 </a>
             </iframe>
+            <h4>Discography</h4>
             <div className="albums-container">
                 {visibleAlbums.map((album, index) => (
                     <div key={index} className="albums-container__div" >
@@ -46,6 +47,7 @@ const AlbumSelector2 = ({ darkMode }) => {
                     </div>
                 ))}
             </div>
+
 
             {albums.length > 4 && (
                 <div>

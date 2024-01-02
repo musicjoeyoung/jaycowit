@@ -58,7 +58,7 @@ const Voice = ({ darkMode }) => {
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xhX4NOMDEnY?si=S_IlOfZugAL9FX7W" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
 
-            <p>Commercial/Promo Reels available <a href="mailto:jaycowit@gmail.com?subject=Commercial/Promo Reels">upon request</a></p>
+            <p>Commercial/Promo Reels available <a target="_blank" href="mailto:jaycowit@gmail.com?subject=Commercial/Promo Reels">upon request</a></p>
         </section>
     )
 }
