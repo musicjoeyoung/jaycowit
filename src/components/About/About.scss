@@ -1,0 +1,32 @@
+@use "../../../src/partials/mixins" as *;
+@use "../../../src/partials/variables" as *;
+
+.about {
+    /*     background-color: $lm-background2;
+
+    &__h2 {
+        background-color: inherit;
+    } */
+}
+.about-container {
+    display: block;
+    text-align: center;
+
+    @include tablet {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+    }
+    &__bio {
+        text-align: left;
+    }
+    &__img {
+        width: 40%;
+        height: 100%;
+        border-radius: 50%;
+
+        @include tablet {
+            width: 25%;
+        }
+    }
+}

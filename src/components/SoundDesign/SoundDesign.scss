@@ -1,0 +1,240 @@
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
+
+.soundDesign {
+    background-color: $lm-background2;
+
+    &__h2,
+    &__p {
+        background-color: inherit;
+
+        &--originalScores {
+            background-color: transparent;
+        }
+    }
+}
+
+.show {
+    @include lm-shadow;
+    border-radius: 1rem;
+    background-color: inherit;
+    margin-bottom: 1rem;
+
+    @include tablet {
+        padding: 3rem;
+        margin: 1rem;
+    }
+
+    &__title {
+        background: transparent;
+        /* padding: 2rem; */
+        margin-block-end: 0rem;
+        margin-block-start: 0rem;
+        margin-left: 1rem;
+    }
+    &__logo {
+        width: 7%;
+        //background: rgba(158, 158, 158, 0.0901960784);
+
+        &--freakonomics {
+            width: 20%;
+        }
+    }
+    &__button {
+        background: #9e9e9e17;
+        margin-block-start: 0rem;
+        text-align: right;
+        padding: 0 4rem 1rem 0;
+        cursor: pointer;
+    }
+    &__full-list {
+        background: #9e9e9e17;
+        text-align: center;
+        margin-block-start: 0rem;
+        margin-block-end: 0rem;
+
+        a {
+            background: transparent;
+            color: $lm-text;
+
+            &:hover {
+                background-color: $lm-hover;
+            }
+        }
+    }
+}
+.show-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(158, 158, 158, 0.0901960784);
+    padding: 1rem;
+}
+.shows-container {
+    background-color: #9e9e9e17;
+
+    @include tablet {
+        padding: 0.5rem;
+    }
+
+    @include desktop {
+        padding: 0 7rem;
+    }
+}
+
+.freakonomics-container {
+    background-color: #9e9e9e17;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+
+    @include small-mobile {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem;
+    }
+    @include desktop {
+        padding: 4rem;
+    }
+
+    &__sub-container {
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+
+        &--original-score {
+            /* (with .freakonomics-card2) */
+            margin: 0 auto;
+            width: 50%;
+
+            @include tablet {
+                width: 40%;
+            }
+        }
+    }
+
+    &__freakonomics-card {
+        position: relative;
+        aspect-ratio: 1/1;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: opacity 0.2s;
+
+        &::before {
+            content: attr(data-title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(0 0 0 / 92%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-size: 1.2rem;
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 0.5;
+                background-image: url("https://res.cloudinary.com/dfbuwtl5q/image/upload/v1703796658/Freakonomics_ztm4zd.png");
+                background-size: contain;
+                color: transparent;
+            }
+        }
+    }
+}
+.nal-container {
+    @include tablet {
+        width: 100%;
+    }
+    background-color: transparent;
+    &__logo {
+        width: 10%;
+        height: 10%;
+    }
+}
+
+.freakonomics-card2 {
+    position: relative;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.5;
+        background-image: url("https://freakonomics.com/wp-content/uploads/2021/07/feature_img_1.png");
+        background-size: contain;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &::before {
+        content: attr(data-title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(0 0 0 / 92%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        font-size: 1rem;
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+}
+.nal-card {
+    position: relative;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.5;
+        background-image: url("src/assets/images/icons/NewAmericanLeft.jpeg");
+        background-size: contain;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &::before {
+        content: attr(data-title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(0 0 0 / 92%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        font-size: 1rem;
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+}
+.axios {
+    height: 100%;
+}

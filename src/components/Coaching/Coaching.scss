@@ -1,0 +1,19 @@
+@use "../../../src/partials/mixins" as *;
+
+.coaching {
+    @include tablet {
+        padding: 0 4rem;
+    }
+    @include desktop {
+        padding: 0 7rem;
+    }
+
+    &__quote {
+        padding: 0rem 2rem;
+        font-family: "Open Sans", sans-serif; //italic
+    }
+    &__see-more {
+        text-align: right;
+        cursor: pointer;
+    }
+}

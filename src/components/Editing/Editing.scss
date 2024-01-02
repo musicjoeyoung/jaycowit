@@ -1,0 +1,29 @@
+@use "../../partials/mixins" as *;
+
+.editing {
+    &__h2 {
+        margin-top: 6rem;
+    }
+    &__p1 {
+        /* width: 50%; */
+        /*   float: left; */
+        /* margin: 0 1.5rem; */
+    }
+    &__p2 {
+        /* width: 50%; */
+    }
+    &__img {
+        width: 40%;
+        padding: 1rem;
+        float: right;
+        border-radius: 3rem;
+
+        @include tablet {
+            width: 30%;
+        }
+
+        @include desktop {
+            width: 20%;
+        }
+    }
+}

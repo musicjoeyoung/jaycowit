@@ -1,0 +1,65 @@
+@use "../../../src/partials/mixins" as *;
+@use "../../partials/variables" as *;
+
+.music {
+    background-color: $lm-background2;
+
+    &__h2,
+    &__p {
+        background-color: inherit;
+    }
+}
+
+.album-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    align-items: center;
+    background-color: inherit;
+    text-align: center;
+}
+
+.album {
+    display: flex;
+    width: 100%;
+    background-color: inherit;
+
+    @include tablet {
+        width: auto;
+    }
+    &__embed {
+        border: 1px solid black;
+        margin-bottom: 1rem;
+        background-color: inherit;
+
+        @include tablet {
+            padding: 2rem;
+        }
+    }
+}
+.title {
+    background-color: #f5f5f5;
+}
+.videos {
+    text-align: center;
+    background-color: #f5f5f5;
+
+    iframe {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            width: 560px;
+        }
+    }
+    &__singleVideo {
+        display: flex;
+        margin: 0 auto;
+    }
+}
+.youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}

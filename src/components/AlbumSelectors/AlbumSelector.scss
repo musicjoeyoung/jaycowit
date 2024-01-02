@@ -1,0 +1,33 @@
+.album-selector {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid black;
+
+    &__title {
+        background-color: inherit;
+    }
+
+    &--last {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &__website {
+        background-color: inherit;
+        margin: 1rem 0 2rem 0;
+    }
+}
+.albums-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+
+    &__div {
+        background-color: #f5f5f5;
+        margin-right: 0.1rem;
+    }
+}
+.seeMore {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+@use "../../partials/mixins" as *;
+
+.pressImg {
+    float: right;
+    width: 30%;
+    padding: 0 0.5rem 0 0.5rem;
+
+    @include tablet {
+        padding: 1rem;
+    }
+
+    @include desktop {
+        padding: 0 2rem 0 2rem;
+        width: 18%;
+    }
+}

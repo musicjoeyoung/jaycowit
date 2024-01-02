@@ -10,6 +10,15 @@ $lm-foreground: (
     linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 55%, rgba(190, 190, 190, 1) 96%)
 );
 
+//dark mode
+$dm-foreground-elements: #0d0630;
+$dm-background: #18314f;
+$dm-shadow: #384e77;
+$dm-borders-header-text: #8bbeb2;
+$dm-hover: #e6f9af;
+$dm-text: #ffffff;
+
 //media sizes
+$small-mobile: 500px;
 $tablet: 760px;
 $desktop: 1024px;
