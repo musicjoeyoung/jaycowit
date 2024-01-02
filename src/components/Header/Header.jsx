@@ -1,10 +1,13 @@
 import "./Header.scss"
 
 const Header = ({ darkMode, setDarkMode }) => {
-    const toggleSvg = darkMode ? 'toggle-dm.svg' : 'toggle-lm.svg';
+    //const toggleSvg = darkMode ? 'toggle-dm.svg' : 'toggle-lm.svg';
+    const toggleLm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223838/toggle-lm_agastf.svg'
+    const toggleDm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223837/toggle-dm_ekdax7.svg'
+    const toggleSvg = darkMode ? toggleDm : toggleLm;
     return (
         <header className={`header ${darkMode ? `dark` && `dark--element` : ''}`}>
-            <img className="header__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} alt="light/dark toggle" />
+            <img className="header__toggle-mobile" src={toggleSvg} onClick={() => setDarkMode(!darkMode)} alt="light/dark toggle" />
             <h1 className="header__h1">Jay Cowit</h1>
             <div className="titles-container">
                 {/* <span>Animations are </span> */}

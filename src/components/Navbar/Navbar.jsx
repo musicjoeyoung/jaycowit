@@ -2,7 +2,9 @@ import "./Navbar.scss"
 import resume from "../../../src/assets/documents/JayCowit_RESUME.pdf"
 
 const Navbar = ({ setDarkMode, darkMode }) => {
-    const toggleSvg = darkMode ? 'toggle-dm.svg' : 'toggle-lm.svg';
+    const toggleLm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223838/toggle-lm_agastf.svg'
+    const toggleDm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223837/toggle-dm_ekdax7.svg'
+    const toggleSvg = darkMode ? toggleDm : toggleLm;
     return (
         <>
             <nav className={`navbar ${darkMode ? 'dark' && 'dark--darkNavbar' : ''}`}>
@@ -25,7 +27,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__link" href={resume} target="_blank">Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
                 <a className="navbar__toggle-a" onClick={() => setDarkMode(!darkMode)}>
-                    <img className="navbar__toggle-img" src={`/src/assets/images/icons/${toggleSvg}`} alt="light/dark toggle" />
+                    <img className="navbar__toggle-img" src={toggleSvg} alt="light/dark toggle" />
                 </a>
                 {/* <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} /> */}
             </nav>
