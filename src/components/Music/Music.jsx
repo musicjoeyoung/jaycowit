@@ -19,7 +19,7 @@ const Music = ({ darkMode }) => {
                 <p className="music__p">I also stream acoustic guitar shows from time to time, some of which you can see here:</p>
 
                 <a className="title" href="https://www.youtube.com/channel/UCatnKMQvqSmYA9ObxX6eV7Q">Jay Cowit and the Enemys Acoustic music</a>
-                <iframe className="videos__singleVideo" width="560" height="315" src="https://www.youtube.com/embed/fqAGqJX2CQQ?si=P-9CPYrJ0RFy7ntA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className="videos__singleVideo" width="560" height="315" src="https://www.youtube.com/embed/fqAGqJX2CQQ?si=P-9CPYrJ0RFy7ntA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                 <p className="music__p">And, I like to play drums, so i do that live on occasion as well:</p>
                 <div className="youtube">
