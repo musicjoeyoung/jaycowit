@@ -24,7 +24,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__link" href="#music">Music</a>
                 <a className="navbar__link" href="#art">Art</a>
                 <a className="navbar__link" href="#press">Press</a>
-                <a className="navbar__link" href={resume} target="_blank">Resume</a>
+                <a className="navbar__link" href={resume} target="_blank" download>Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
                 <a className="navbar__toggle-a" onClick={() => setDarkMode(prevDarkMode => !prevDarkMode)}>
                     <img className="navbar__toggle-img" src={toggleSvg} alt="light/dark toggle" />
