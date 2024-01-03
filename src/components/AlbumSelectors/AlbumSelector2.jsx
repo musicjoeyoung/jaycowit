@@ -29,6 +29,7 @@ const AlbumSelector2 = ({ darkMode }) => {
                 style={{ border: 0, width: '350px', height: '470px', marginTop: '20px' }}
                 src={`https://bandcamp.com/EmbeddedPlayer/album=${selectedAlbum}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/`}
                 seamless
+                title="Wounded Buffalo Theory Bandcamp Player"
             >
                 <a href={`https://jcowit.bandcamp.com/album/album-${selectedAlbum}`} >
                     Album by j. cowit and The Ruthless Orchestra

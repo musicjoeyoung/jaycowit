@@ -34,15 +34,15 @@ const SoundDesign = ({ darkMode }) => {
                 </div>
 
                 <div className="shows-container">
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1080257/&share=1"></iframe>
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/924939/&share=1"></iframe>
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/681301/&share=1"></iframe>
+                    <iframe title="The Takeaway embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1080257/&share=1"></iframe>
+                    <iframe title="The Takeaway embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/924939/&share=1"></iframe>
+                    <iframe title="The Takeaway embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/681301/&share=1"></iframe>
                     {isVisible1 && (
                         <>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1260059/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1130587/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1328037/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/633521/&share=1"></iframe>
+                            <iframe title="The Takeaway embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1260059/&share=1"></iframe>
+                            <iframe title="The Takeaway embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1130587/&share=1"></iframe>
+                            <iframe title="The Takeaway embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1328037/&share=1"></iframe>
+                            <iframe title="The Takeaway embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/633521/&share=1"></iframe>
                         </>
                     )}
                 </div>
@@ -118,16 +118,16 @@ const SoundDesign = ({ darkMode }) => {
                 </div>
 
                 <div className="shows-container">
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1066255/&share=1"></iframe>
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1059580/&share=1"></iframe>
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/953010/&share=1"></iframe>
+                    <iframe title="Politics with Amy Walter embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1066255/&share=1"></iframe>
+                    <iframe title="Politics with Amy Walter embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1059580/&share=1"></iframe>
+                    <iframe title="Politics with Amy Walter embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/953010/&share=1"></iframe>
 
 
                     {isVisible4 && (
                         <>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/989338/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1029436/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1074404/&share=1"></iframe>
+                            <iframe title="Politics with Amy Walter embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/989338/&share=1"></iframe>
+                            <iframe title="Politics with Amy Walter embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1029436/&share=1"></iframe>
+                            <iframe title="Politics with Amy Walter embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1074404/&share=1"></iframe>
 
                         </>
                     )}
@@ -142,23 +142,15 @@ const SoundDesign = ({ darkMode }) => {
                 </div>
 
                 <div className="shows-container">
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/959008/&share=1"></iframe>
+                    <iframe title="WNYC embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/959008/&share=1"></iframe>
                     <div className="freakonomics-container__sub-container freakonomics-container__sub-container--original-score">
                         <a href="https://freakonomics.com/podcast/ask-not-what-your-podcast-can-do-for-you/" target="_blank">
                             <div className="freakonomics-card2" data-title="Ask Not What Your Podcast Can Do For You">
                             </div>
                         </a>
                     </div>
-                    {/*                     {isVisible3 && (
-                        <>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1260059/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1130587/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1328037/&share=1"></iframe>
-                            <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/633521/&share=1"></iframe>
-                        </>
-                    )} */}
+
                 </div>
-                {/* <p className="show__button" onClick={toggle3}>{isVisible3 ? 'see less' : 'see more'}</p> */}
             </section>
 
             <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
@@ -166,9 +158,9 @@ const SoundDesign = ({ darkMode }) => {
                     <h3 className="show__title">Assorted Podcasts</h3>
                 </div>
                 <div className="shows-container">
-                    <iframe className="axios" frameBorder="0" height="482" scrolling="no" src="https://playlist.megaphone.fm/?e=AXIOS9350647648"
+                    <iframe title="Axios embedded player" className="axios" frameBorder="0" height="482" scrolling="no" src="https://playlist.megaphone.fm/?e=AXIOS9350647648"
                         width="100%"></iframe>
-                    <iframe className="axios" frameBorder="0" height="482" scrolling="no" src="https://playlist.megaphone.fm/?e=AXIOS5915642521"
+                    <iframe title="Axios embedded player" className="axios" frameBorder="0" height="482" scrolling="no" src="https://playlist.megaphone.fm/?e=AXIOS5915642521"
                         width="100%"></iframe>
                     <iframe
                         allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
@@ -177,8 +169,9 @@ const SoundDesign = ({ darkMode }) => {
                         style={{ width: '100%', overflow: 'hidden', borderRadius: '10px' }}
                         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                         src="https://embed.podcasts.apple.com/us/podcast/how-to-vote-in-america/id1499899716"
+                        title="Apple Podcasts embedded player"
                     ></iframe>
-                    <iframe frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1170516/&share=1"></iframe>
+                    <iframe title="WNYC embedded player" frameBorder="0" scrolling="no" height="130" width="100%" src="https://www.wnyc.org/widgets/ondemand_player/wnycstudios/#file=/audio/json/1170516/&share=1"></iframe>
                     <div className="nal-container">
                         <div className="freakonomics-container__sub-container freakonomics-container__sub-container--original-score">
                             <a href="https://www.thenewamericanleft.com/podcasts/2019/9/19/there-may-be-gods-but-they-are-not-our-masters" target="_blank">
