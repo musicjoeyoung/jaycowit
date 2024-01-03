@@ -22,6 +22,7 @@ const Voice = ({ darkMode }) => {
                     }}
                     sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                     src="https://embed.podcasts.apple.com/us/podcast/larissa-fasthorse-on-finding-the-humor-in/id363143310?i=1000610002110"
+                    title="Apple Podcasts embedded player"
                 ></iframe>
                 <iframe
                     allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
@@ -36,6 +37,7 @@ const Voice = ({ darkMode }) => {
                     }}
                     sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                     src="https://embed.podcasts.apple.com/us/podcast/puff-puff-passing-marijuana-legislation/id363143310?i=1000609983241"
+                    title="Apple Podcasts embedded player"
                 ></iframe>
                 <iframe
                     allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
@@ -50,6 +52,7 @@ const Voice = ({ darkMode }) => {
                     }}
                     sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                     src="https://embed.podcasts.apple.com/us/podcast/a-look-at-coachella-2023-weekend-one/id363143310?i=1000610127360"
+                    title="Apple Podcasts embedded player"
                 ></iframe>
             </div>
             {/* <p>I also do voice over work for video games, some of which should be available very soon. I can do characters, or any kind of tone you may need.</p> */}
