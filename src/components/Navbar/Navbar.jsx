@@ -1,4 +1,5 @@
 import "./Navbar.scss"
+
 import resume from "../../../src/assets/documents/JayCowit_RESUME.pdf"
 
 const Navbar = ({ setDarkMode, darkMode }) => {
@@ -26,8 +27,8 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__link" href="#press">Press</a>
                 <a className="navbar__link" href={resume} target="_blank" download>Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
-                <a className="navbar__toggle-a" onClick={() => setDarkMode(prevDarkMode => !prevDarkMode)}>
-                    <img className="navbar__toggle-img" src={toggleSvg} alt="light/dark toggle" />
+                <a className="navbar__toggle-a navbar__toggle-a--dark" onClick={() => setDarkMode(prevDarkMode => !prevDarkMode)}>
+                    <img className="navbar__toggle-img " src={toggleSvg} alt="light/dark toggle" />
                 </a>
                 {/* <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} /> */}
             </nav>

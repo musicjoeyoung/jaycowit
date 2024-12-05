@@ -43,6 +43,10 @@
         &:hover {
             background-color: transparent;
         }
+
+        &--dark {
+            padding: 0 !important;
+        }
     }
     &__toggle-img {
         width: 100%;
@@ -94,6 +98,7 @@
 
 .dropdown-content a:hover {
     background-color: $lm-hover;
+    padding: 12px 15px;
 }
 
 .dropdown:hover .dropdown-content {
