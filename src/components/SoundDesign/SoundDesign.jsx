@@ -1,8 +1,10 @@
 import "./SoundDesign.scss"
-import { useState } from 'react'
-import takeaway from "../../assets/images/icons/TheTakeway.png"
+
+import ctpublic from "../../assets/images/icons/ctpublic.webp"
 import freakonomics from "../../assets/images/icons/freakonomics.png"
 import nal from "../../assets/images/icons/NewAmericanLeft.jpeg"
+import takeaway from "../../assets/images/icons/TheTakeway.png"
+import { useState } from 'react'
 
 const SoundDesign = ({ darkMode }) => {
     const [isVisible1, setIsVisible1] = useState(false);
@@ -26,7 +28,81 @@ const SoundDesign = ({ darkMode }) => {
         <section className={`soundDesign ${darkMode ? `dark` && `dark--darkSoundDesign` : ''}`}>
 
             <h2 className="soundDesign__h2" id="soundDesign">Sound Design/Mixing/Audio Editing</h2>
-            <p className="soundDesign__p">Since the early 2000’s, I’ve been a sound designer, editor, technical director, and show director for national radio shows, including The Takeaway (WNYC/PRX), Freakonomics Radio, Politics with Amy Walter, 1 Big Thing (Axios) and The Randi Rhodes Show on Air America Radio. I’ve honed my skill at sound design, producing thousands of pre-produced intros, bits, montages and more based around breaking news, as well as entertainment/culture, and a gallimaufry of strange and random audio experiments. I’ve also sound designed theatrical off-broadway plays, and mixed sound for films.</p>
+            <p className="soundDesign__p">Since the early 2000’s, I’ve been a sound designer, editor, technical director, and show director for national radio shows, including The Takeaway (WNYC/PRX), CT Public's Generation Barney mini-series, Freakonomics Radio, Politics with Amy Walter, 1 Big Thing (Axios) and The Randi Rhodes Show on Air America Radio. I’ve honed my skill at sound design, producing thousands of pre-produced intros, bits, montages and more based around breaking news, as well as entertainment/culture, and a gallimaufry of strange and random audio experiments. I’ve also sound designed theatrical off-broadway plays, and mixed sound for films.</p>
+
+            <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
+                <div className="show-name-container">
+                    <img src={ctpublic} className="show__logo show__logo--ctpublic" alt="Connecticut Public Radio, PBS, NPR" />
+                    <h3 className="show__title">CT Public's Generation Barney</h3>
+                </div>
+
+                {/*        <div className="freakonomics-container">
+                    <div className="freakonomics-container__sub-container">
+                        <a href="https://www.ctpublic.org/podcast/generation-barney" target="_blank">
+                            <div className="ctpublic-card" data-title="Who Needs Handwriting?">
+                            </div>
+                        </a>
+                        <a href="https://www.ctpublic.org/podcast/generation-barney" target="_blank">
+                            <div className="ctpublic-card" data-title="Who Needs Handwriting?">
+                            </div>
+                        </a>
+                        <a href="https://www.ctpublic.org/podcast/generation-barney" target="_blank">
+                            <div className="ctpublic-card" data-title="Who Needs Handwriting?">
+                            </div>
+                        </a>
+
+                    </div>
+                </div> */}
+                <div className="freakonomics-container">
+                    <div className="freakonomics-container__sub-container">
+                        <a href="https://www.ctpublic.org/podcast/generation-barney/2024-10-28/trailer-generation-barney" target="_blank">
+                            <div className="freakonomics-container__ctpublic-card" data-title="Trailer: Generation Barney">
+                            </div>
+                        </a>
+                    </div>
+                    <div className="freakonomics-container__sub-container">
+                        <a href="https://www.ctpublic.org/podcast/generation-barney/2024-11-12/toddler-tv" target="_blank">
+                            <div className="freakonomics-container__ctpublic-card" data-title="Toddler TV"></div>
+                        </a>
+                    </div>
+                    <div className="freakonomics-container__sub-container">
+                        <a href="https://www.ctpublic.org/podcast/generation-barney/2024-11-12/dinosync" target="_blank">
+                            <div className="freakonomics-container__ctpublic-card" data-title="Dinosync">
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    {isVisible2 && (
+                        <>
+                            <div className="freakonomics-container__sub-container">
+                                <a href="https://www.ctpublic.org/podcast/generation-barney/2024-11-19/love-2-hate" target="_blank">
+                                    <div className="freakonomics-container__ctpublic-card" data-title="Love 2 Hate">
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="freakonomics-container__sub-container">
+                                <a href="https://www.ctpublic.org/podcast/generation-barney/2024-11-26/purple-capitalism" target="_blank">
+                                    <div className="freakonomics-container__ctpublic-card" data-title="Purple Capitalism">
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="freakonomics-container__sub-container">
+                                <a href="https://www.ctpublic.org/podcast/generation-barney/2024-12-03/purple-dino-puppeteers" target="_blank">
+                                    <div className="freakonomics-container__ctpublic-card" data-title="Purple Dino Puppeteers">
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </>
+                    )}
+                </div>
+                <p className="show__button" onClick={toggle2}>{isVisible2 ? 'see less' : 'see more'}</p>
+
+            </section>
+
             <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">
                     <img src={takeaway} className="show__logo" alt="The Takeaway Logo" />
@@ -48,6 +124,8 @@ const SoundDesign = ({ darkMode }) => {
                 </div>
                 <p className="show__button" onClick={toggle1}>{isVisible1 ? 'see less' : 'see more'}</p>
             </section>
+
+
 
             <section className={`show ${darkMode ? 'dark--darkShow' : ''}`}>
                 <div className="show-name-container">

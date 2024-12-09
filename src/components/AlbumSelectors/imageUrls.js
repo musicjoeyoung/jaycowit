@@ -1,4 +1,5 @@
 export const jayCowitImageUrls = [
+    "https://f4.bcbits.com/img/a1161626009_2.jpg",
     "https://f4.bcbits.com/img/a1794076124_2.jpg",
     "https://f4.bcbits.com/img/a1551130785_2.jpg",
     "https://f4.bcbits.com/img/a0394124985_2.jpg",
@@ -48,6 +49,12 @@ export const woundedBuffaloTheoryImageUrls = [
     "https://f4.bcbits.com/img/a0889427495_2.jpg",
     "https://woundedbuffalotheory.bandcamp.com/img/0.gif",
     "https://woundedbuffalotheory.bandcamp.com/img/0.gif"
+]
+export const jCowitAndTheEnemysImageUrls = [
+    "https://f4.bcbits.com/img/a3962414746_2.jpg",
+    "https://f4.bcbits.com/img/a3890877168_2.jpg",
+    "https://f4.bcbits.com/img/a1953343536_2.jpg"
+
 ]
 
 //function for console on bandcamp page to get all album images
