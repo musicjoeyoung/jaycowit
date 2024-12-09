@@ -1,4 +1,5 @@
 import "./Coaching.scss";
+
 import { useState } from 'react';
 
 const Coaching = ({ darkMode }) => {
@@ -48,6 +49,9 @@ const Coaching = ({ darkMode }) => {
                 {showQuote1 ? quote1 : null}
             </p>
             {showQuote1 ? <p className="coaching__see-more" onClick={toggleQuote1}>see less</p> : <p className="coaching__see-more" onClick={toggleQuote1}>see more</p>}
+
+            <h4>Arun Venugopal from WNYC</h4>
+            <p className="coaching__quote">"I’ve worked with Jay for years. He has an ability like no one else does to make you understand just what the moment calls for, and even more importantly, he makes you believe in yourself. When you are working with nothing but words, ideas and your voice, having someone who can help you distill all of that into something clear and forceful is invaluable."</p>
 
             <h4>Jose Olivares, investigative journalist and lead producer with The Intercept:</h4>
             <p className="coaching__quote">

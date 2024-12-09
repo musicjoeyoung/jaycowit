@@ -43,6 +43,10 @@
         &--freakonomics {
             width: 20%;
         }
+
+        &--ctpublic {
+            width: 35%;
+        }
     }
     &__button {
         background: #9e9e9e17;
@@ -157,6 +161,44 @@
             }
         }
     }
+
+    &__ctpublic-card {
+        position: relative;
+        aspect-ratio: 1/1;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.5;
+            background-image: url("https://res.cloudinary.com/dfbuwtl5q/image/upload/v1733759774/ctpublic_wmcxoq.webp");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        &::before {
+            content: attr(data-title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(0 0 0 / 92%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-size: 1rem;
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+    }
 }
 .nal-container {
     @include tablet {
@@ -213,7 +255,7 @@
 
     &:hover {
         opacity: 0.5;
-        background-image: url("https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704241063/NewAmericanLeft_pds3fz.jpg");
+        background-image: url("https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704241063/NewAmericanLeft_pds3fz.jpg") !important;
         background-size: contain;
 
         &::before {
@@ -239,6 +281,7 @@
         transition: opacity 0.2s;
     }
 }
+
 .axios {
     height: 100%;
 }

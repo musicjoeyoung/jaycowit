@@ -1,7 +1,9 @@
 import "./Music.scss"
+
 import AlbumSelector1 from "../AlbumSelectors/AlbumSelector1"
 import AlbumSelector2 from "../AlbumSelectors/AlbumSelector2"
 import AlbumSelector3 from "../AlbumSelectors/AlbumSelector3"
+import AlbumSelector4 from "../AlbumSelectors/AlbumSelector4"
 
 const Music = ({ darkMode }) => {
     return (
@@ -11,6 +13,7 @@ const Music = ({ darkMode }) => {
 
             <div className="album-container">
                 <AlbumSelector1 />
+                <AlbumSelector4 />
                 <AlbumSelector2 />
                 <AlbumSelector3 />
             </div>

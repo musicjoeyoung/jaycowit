@@ -1,4 +1,5 @@
 export const jayCowitAlbumValues = [
+    "3263412656",
     "1826326894",
     "1919318966",
     "3235036029",
@@ -47,6 +48,11 @@ export const woundedBuffaloTheoryAlbumValues = [
     "375289864",
     "1918961443",
     "3463480086",
+]
+export const jCowitAndTheEnemysAlbumValues = [
+    "1513409838",
+    "3854342267",
+    "4027016988",
 ]
 
 //function for console on bandcamp page to get the values:
