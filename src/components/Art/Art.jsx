@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import './Art.scss';
 import instagram from "../../assets/images/icons/instagram.svg"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Art = ({ darkMode }) => {
+const Art = () => {
+  const { darkMode } = useTheme();
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
     const [isVisible1, setIsVisible1] = useState(false);

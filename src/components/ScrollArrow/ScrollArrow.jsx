@@ -1,7 +1,9 @@
 import "./ScrollArrow.scss"
 import { useState, useEffect } from 'react';
+import { useTheme } from '../../contexts/ThemeContext';
 
-const ScrollArrow = ({ darkMode }) => {
+const ScrollArrow = () => {
+  const { darkMode } = useTheme();
     const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = () => {

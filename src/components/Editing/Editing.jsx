@@ -1,6 +1,8 @@
 import "./Editing.scss"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Editing = ({ darkMode }) => {
+const Editing = () => {
+  const { darkMode } = useTheme();
     return (
         <section className={`editing ${darkMode ? 'dark' : ''}`}>
             <h2 id="editing" className="editing__h2">Copy Editing/Script Writing/Consulting</h2>

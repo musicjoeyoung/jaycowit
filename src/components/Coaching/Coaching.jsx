@@ -1,8 +1,9 @@
 import "./Coaching.scss";
-
 import { useState } from 'react';
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Coaching = ({ darkMode }) => {
+const Coaching = () => {
+  const { darkMode } = useTheme();
     const [showQuote1, setShowQuote1] = useState(false);
     const [showQuote2, setShowQuote2] = useState(false);
 

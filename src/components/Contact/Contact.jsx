@@ -1,6 +1,8 @@
 import "./Contact.scss"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Contact = ({ darkMode }) => {
+const Contact = () => {
+  const { darkMode } = useTheme();
     return (
         <section className={`contact ${darkMode ? 'dark' : ''}`}>
             <h2 className="contact__h2" id="contact">Contact</h2>

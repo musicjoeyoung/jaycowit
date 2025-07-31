@@ -6,8 +6,10 @@ import instagram from "../../assets/images/icons/instagram.svg"
 import linkedin from "../../assets/images/icons/linkedin.svg"
 import twitter from "../../assets/images/icons/x-logo.png"
 import threads from "../../assets/images/icons/threads-logo.png"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Footer = ({ darkMode }) => {
+const Footer = () => {
+  const { darkMode } = useTheme();
     return (
         <footer className={`footer ${darkMode ? 'dark' : ''}`}>
             <div className="image-container">

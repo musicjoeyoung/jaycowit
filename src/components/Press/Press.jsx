@@ -1,6 +1,8 @@
 import "./Press.scss"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Press = ({ darkMode }) => {
+const Press = () => {
+  const { darkMode } = useTheme();
     return (
         <section className={`${darkMode ? 'dark' && 'dark--darkPress' : ''}`}>
             <h2 id="press">Press</h2>

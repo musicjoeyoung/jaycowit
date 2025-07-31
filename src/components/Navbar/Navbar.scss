@@ -8,6 +8,7 @@
     @include tablet {
         font-size: 1.2rem;
         justify-content: space-evenly;
+        align-items: center;
         display: flex;
         padding: 1rem 0rem;
         position: fixed;
@@ -27,6 +28,20 @@
             -moz-border-radius: 1rem;
             -ms-border-radius: 1rem;
             -o-border-radius: 1rem;
+        }
+        
+        &__theme-toggle {
+            display: none; // Hide by default on mobile
+            
+            @include tablet {
+                display: flex;
+                align-items: center;
+                margin-left: 1.5rem;
+            }
+            
+            @include desktop {
+                margin-left: 2rem;
+            }
         }
     }
 
@@ -184,7 +199,20 @@
     margin: -50px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background-color: #f5f6fa;
+    background-color: var(--color-card-bg);
+    
+    /* Style for theme toggle in mobile menu */
+    .mobile-ul__li {
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            margin: 0.5rem auto;
+            
+            &__icon {
+                font-size: 1.5rem;
+            }
+        }
+    }
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);

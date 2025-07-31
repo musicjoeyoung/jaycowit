@@ -4,13 +4,13 @@ import SoundDesign from "../SoundDesign/SoundDesign"
 import Voice from "../Voice/Voice"
 import "./Radio.scss"
 
-const Radio = ({ darkMode }) => {
+const Radio = () => {
     return (
         <div>
-            <SoundDesign darkMode={darkMode} />
-            <Editing darkMode={darkMode} />
-            <Voice darkMode={darkMode} />
-            <Coaching darkMode={darkMode} />
+            <SoundDesign />
+            <Editing />
+            <Voice />
+            <Coaching />
         </div>
     )
 }
