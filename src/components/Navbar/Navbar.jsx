@@ -1,4 +1,5 @@
 import "./Navbar.scss"
+
 import resume from "../../../src/assets/documents/JayCowit_RESUME.pdf"
 import { useTheme } from '../../contexts/ThemeContext';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
@@ -27,9 +28,11 @@ const Navbar = () => {
                 <a className="navbar__link" href="#press">Press</a>
                 <a className="navbar__link" href={resume} target="_blank" download>Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
+
                 <div className="navbar__theme-toggle">
                     <ThemeToggle />
                 </div>
+
                 {/* <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} /> */}
             </nav>
 
