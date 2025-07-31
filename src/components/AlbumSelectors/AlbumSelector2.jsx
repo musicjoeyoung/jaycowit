@@ -1,9 +1,11 @@
 import "./AlbumSelector.scss"
+import { useTheme } from '../../contexts/ThemeContext';
 import { useState } from 'react';
 import { woundedBuffaloTheoryImageUrls } from "./imageUrls";
 import { woundedBuffaloTheoryAlbumValues } from "./albumsValues";
 
-const AlbumSelector2 = ({ darkMode }) => {
+const AlbumSelector2 = () => {
+  const { darkMode } = useTheme();
     const [selectedAlbum, setSelectedAlbum] = useState('2560100843');
     const [selectedImage, setSelectedImage] = useState(
         'https://f4.bcbits.com/img/a2452525750_2.jpg'

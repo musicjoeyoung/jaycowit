@@ -1,0 +1,33 @@
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  background-color: var(--color-card-bg);
+  box-shadow: 0 2px 4px var(--color-card-shadow);
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    background-color: var(--color-secondary);
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover &__icon {
+    transform: scale(1.1);
+  }
+}

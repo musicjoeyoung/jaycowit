@@ -1,11 +1,12 @@
 import "./Navbar.scss"
 
 import resume from "../../../src/assets/documents/JayCowit_RESUME.pdf"
+import { useTheme } from '../../contexts/ThemeContext';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import { useState } from 'react';
 
-const Navbar = ({ setDarkMode, darkMode }) => {
-    const toggleLm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223838/toggle-lm_agastf.svg'
-    const toggleDm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223837/toggle-dm_ekdax7.svg'
-    const toggleSvg = darkMode ? toggleDm : toggleLm;
+const Navbar = () => {
+  const { darkMode } = useTheme();
     return (
         <>
             <nav className={`navbar ${darkMode ? 'dark dark--darkNavbar' : ''}`}>
@@ -27,9 +28,11 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <a className="navbar__link" href="#press">Press</a>
                 <a className="navbar__link" href={resume} target="_blank" download>Resume</a>
                 <a className="navbar__link" href="#contact">Contact</a>
-                <a className="navbar__toggle-a navbar__toggle-a--dark" onClick={() => setDarkMode(prevDarkMode => !prevDarkMode)}>
-                    <img className="navbar__toggle-img " src={toggleSvg} alt="light/dark toggle" />
-                </a>
+
+                <div className="navbar__theme-toggle">
+                    <ThemeToggle />
+                </div>
+
                 {/* <img className="navbar__toggle-mobile" src={`/src/assets/images/icons/${toggleSvg}`} onClick={() => setDarkMode(!darkMode)} /> */}
             </nav>
 
@@ -69,6 +72,13 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                         </li>
                         <li className="mobile-ul__li">
                             <a className="mobile-ul__a" href="#contact">Contact</a>
+                        </li>
+                        <li className="mobile-ul__li" style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            marginTop: '1rem'
+                        }}>
+                            <ThemeToggle />
                         </li>
                     </ul>
                 </div>

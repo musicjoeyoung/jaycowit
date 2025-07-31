@@ -1,7 +1,9 @@
 import "./About.scss"
 import jay from "../../assets/images/photos/JayCowit.png"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const About = ({ darkMode }) => {
+const About = () => {
+  const { darkMode } = useTheme();
     return (
         <section className={`about ${darkMode ? 'dark' : ''}`}>
             <h2 className="about__h2" id="about">About</h2>

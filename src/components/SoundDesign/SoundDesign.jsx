@@ -1,12 +1,13 @@
 import "./SoundDesign.scss"
-
 import ctpublic from "../../assets/images/icons/ctpublic.webp"
 import freakonomics from "../../assets/images/icons/freakonomics.png"
 import nal from "../../assets/images/icons/NewAmericanLeft.jpeg"
 import takeaway from "../../assets/images/icons/TheTakeway.png"
 import { useState } from 'react'
+import { useTheme } from '../../contexts/ThemeContext';
 
-const SoundDesign = ({ darkMode }) => {
+const SoundDesign = () => {
+  const { darkMode } = useTheme();
     const [isVisible1, setIsVisible1] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
     const [isVisible3, setIsVisible3] = useState(false);

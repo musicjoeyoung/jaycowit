@@ -1,6 +1,8 @@
 import "./Voice.scss"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Voice = ({ darkMode }) => {
+const Voice = () => {
+  const { darkMode } = useTheme();
     return (
         <section className={`voice ${darkMode ? 'dark' && 'dark--darkVoice' : ''}`}>
             <h2 id="voice">Voiceover Artist/Hosting/On-Air Work</h2>

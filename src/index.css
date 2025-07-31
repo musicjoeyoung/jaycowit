@@ -1,15 +1,36 @@
 :root {
+  /* Light theme colors */
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-primary: #18314f;
+  --color-secondary: #f0f0f0;
+  --color-accent: #646cff;
+  --color-border: #e0e0e0;
+  --color-card-bg: #f8f9fa;
+  --color-card-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Common styles */
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  /* background-color: #18314f; */
-
+  color: var(--color-text);
+  background-color: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-bg: #18314f;
+  --color-text: #f0f0f0;
+  --color-primary: #4dabf7;
+  --color-secondary: #1a2d4a;
+  --color-accent: #82b1ff;
+  --color-border: #2a4a6e;
+  --color-card-bg: #1a2d4a;
+  --color-card-shadow: rgba(0, 0, 0, 0.3);
 }
 
 

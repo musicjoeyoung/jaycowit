@@ -1,6 +1,8 @@
 import "./AlbumSelector.scss"
+import { useTheme } from '../../contexts/ThemeContext';
 
-const AlbumSelector3 = ({ darkMode }) => {
+const AlbumSelector3 = () => {
+  const { darkMode } = useTheme();
 
     const albumUrl = 'https://thesometimeboys.bandcamp.com/album/the-perfect-home';
     const albumId = '4014001614';

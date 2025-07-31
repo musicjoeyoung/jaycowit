@@ -1,10 +1,12 @@
 import "./AlbumSelector.scss"
+import { useTheme } from '../../contexts/ThemeContext';
 
 import { jCowitAndTheEnemysAlbumValues } from "./albumsValues";
 import { jCowitAndTheEnemysImageUrls } from "./imageUrls";
 import { useState } from 'react';
 
-const AlbumSelector4 = ({ darkMode }) => {
+const AlbumSelector4 = () => {
+  const { darkMode } = useTheme();
     const [selectedAlbum, setSelectedAlbum] = useState('1513409838');
     const [selectedImage, setSelectedImage] = useState(
         'https://f4.bcbits.com/img/a3962414746_2.jpg'
